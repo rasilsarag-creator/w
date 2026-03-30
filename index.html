@@ -1,144 +1,98 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نشرة أخبار واحة الأحساء الرقمية</title>
-    <style>
-        /* تنسيق CSS الشامل (النقطة 3 و 5) */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f4f0;
-            margin: 0;
-            padding: 20px;
-            color: #333;
-            line-height: 1.8;
-        }
-        .newsletter-container {
-            max-width: 850px;
-            margin: auto;
-            background: white;
-            border: 2px solid #379a2a;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        header {
-            background-color: #379a2a;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
-        .welcome-section {
-            padding: 20px;
-            text-align: center;
-            background-color: #e8f5e9;
-        }
-        /* تنظيم المحتوى داخل جدول (النقطة 2) */
-        table {
-            width: 95%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 15px;
-            text-align: justify;
-        }
-        th {
-            background-color: #379a2a;
-            color: white;
-        }
-        .main-image {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .btn-interact {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: #379a2a;
-            color: white;
-            border: none;
-            border-radius: 25px;
-            margin: 20px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: 0.3s;
-        }
-        .btn-interact:hover { background-color: #2c5e1a; transform: scale(1.05); }
-        footer {
-            background-color: #f9f9f9;
-            padding: 20px;
-            text-align: center;
-            border-top: 1px solid #eee;
-        }
-        /* استجابة الرسالة (النقطة 5) */
-        @media (max-width: 768px) {
-            table, tr, td { display: block; width: 100%; }
-            th { display: none; }
-            td { margin-bottom: 10px; border: none; background: #fafafa; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أخبار مدينة الأحساء</title>
+
+<style>
+body {
+    font-family: Arial;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+header {
+    background-color: #1e8449;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.section {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #1e8449;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #1e8449;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+</style>
+
 </head>
 <body>
 
-    <div class="newsletter-container">
-        <!-- 1. هيكل الرسالة: العنوان -->
-        <header>
-            <h1>نشرة أخبار مدينة الأحساء الرقمية</h1>
-            <p>أكبر واحة نخيل طبيعية في العالم</p>
-        </header>
+<header>
+    <h1>أخبار مدينة الأحساء</h1>
+</header>
 
-        <section class="welcome-section">
-            <p>تُعدّ <b>الأحساء</b> واحدة من أعرق وأجمل مدن المملكة، تجمع بين التاريخ العريق والحضارة المتجددة.</p>
-        </section>
+<div class="section">
+    <h2>مرحبًا بكم</h2>
+    <p>نقدم لكم أحدث أخبار مدينة الأحساء وأهم المشاريع التنموية والفعاليات الوطنية.</p>
+</div>
 
-        <!-- صورة مرتبطة بالمدينة (النقطة 1) -->
-        <img src="5-2.jpg.webp" alt="سوق القيصرية التاريخي" class="main-image">
+<div class="section">
+    <h2>خبر اليوم</h2>
+    <p>تطوير واحة الأحساء لتعزيز السياحة، حيث تعد من أكبر الواحات الطبيعية في العالم.</p>
+</div>
 
-        <!-- 2. تنظيم المحتوى داخل جدول (النقطة 2 و 6) -->
-        <table>
-            <thead>
-                <tr>
-                    <th width="30%">القسم</th>
-                    <th>التفاصيل والمعالم</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><b>خبر اليوم: المعالم التاريخية</b></td>
-                    <td>تضم الأحساء معالم بارزة مثل <i>جبل القارة</i> بتكوينه الفريد، وسوق القيصرية الذي يعكس الطابع التراثي الأصيل.</td>
-                </tr>
-                <tr>
-                    <td><b>مشروع تنموي: واحة اليونسكو</b></td>
-                    <td>تسجيل الواحة في قائمة التراث العالمي يؤكد قيمتها الإنسانية، مع استمرار النهضة في مجالات التعليم والثقافة والسياحة.</td>
-                </tr>
-                <tr>
-                    <td><b>فعالية وطنية: فخر النخيل</b></td>
-                    <td>مبادرات التشجير تهدف لزيادة أشجار النخيل لتعزيز الهوية الوطنية والجمال الطبيعي للواحة.</td>
-                </tr>
-            </tbody>
-        </table>
+<div class="section">
+    <h2>مشروع تنموي</h2>
+    <p>تحسين البنية التحتية وتطوير الخدمات ضمن رؤية المملكة 2030.</p>
+</div>
 
-        <div style="text-align: center;">
-            <!-- 4. عنصر تفاعلي (زر الترحيب) -->
-            <button class="btn-interact" onclick="showWelcome()">اضغط لاستكشف فخرنا بالأحساء!</button>
-        </div>
+<div class="section">
+    <h2>فعالية وطنية</h2>
+    <p>إقامة فعاليات ثقافية وتراثية في الأحساء تعكس تاريخها العريق.</p>
+</div>
 
-        <!-- تذييل الصفحة (النقطة 1) -->
-        <footer>
-            <p>إعداد الطالبة : <b>[راسيل عبد الوهاب سراج]</b></p>
-            <p><i>"الأحساء.. قلبُ الوطنِ النابض بالخير، وعراقةُ النخيل التي تروي قصة فخرنا السعودي."</i></p>
-        </footer>
-    </div>
+<div class="section">
+    <h2>صورة من الأحساء</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Al-Ahsa_Oasis.jpg">
+</div>
 
-    <!-- 4. إضافة التفاعل بالجافاسكريبت -->
-    <script>
-        function showWelcome() {
-            alert("أهلاً بك في واحة الأحساء! شكراً لزيارتك نشرتنا الإخبارية الرقمية.");
-            document.body.style.backgroundColor = "#e8f5e9";
-        }
-    </script>
+<div class="section">
+    <button onclick="alert('شكراً لزيارتك!')">اضغط هنا</button>
+</div>
+
+<footer>
+    <p>إعداد الطالبة: راسيل عبد الوهاب سراج | المجموعة: _نبض الشرقية__</p>
+</footer>
+
 </body>
 </html>
