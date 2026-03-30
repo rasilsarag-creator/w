@@ -1,61 +1,144 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <title>الأحساء: واحة النخيل والعطاء | استكشف تاريخنا</title>
-<meta name="description" content="تعرف على مدينة الأحساء، أكبر واحة نخيل طبيعية في العالم ووجهة سياحية وتاريخية فريدة في المملكة العربية السعودية.">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">   
-    <title>السعودية بعيون تقنية</title> 
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>  
-        <!-- زر القائمة للجوال -->
-<div class="hamburger" onclick="toggleMenu()">
-    ☰
-</div>
+    <title>نشرة أخبار واحة الأحساء الرقمية</title>
+    <style>
+        /* تنسيق CSS الشامل (النقطة 3 و 5) */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f0;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            line-height: 1.8;
+        }
+        .newsletter-container {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            border: 2px solid #379a2a;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        header {
+            background-color: #379a2a;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        .welcome-section {
+            padding: 20px;
+            text-align: center;
+            background-color: #e8f5e9;
+        }
+        /* تنظيم المحتوى داخل جدول (النقطة 2) */
+        table {
+            width: 95%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: justify;
+        }
+        th {
+            background-color: #379a2a;
+            color: white;
+        }
+        .main-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .btn-interact {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #379a2a;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            margin: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .btn-interact:hover { background-color: #2c5e1a; transform: scale(1.05); }
+        footer {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+        /* استجابة الرسالة (النقطة 5) */
+        @media (max-width: 768px) {
+            table, tr, td { display: block; width: 100%; }
+            th { display: none; }
+            td { margin-bottom: 10px; border: none; background: #fafafa; }
+        }
+    </style>
+</head>
+<body>
 
-<!-- قائمة التنقل -->
-<nav id="nav-menu">
-    <ul>
-        <li><a href="#">الرئيسية</a></li>
-        <li><a href="#">عن الأحساء</a></li>
-        <li><a href="#">صور</a></li>
-    </ul>
-</nav>
+    <div class="newsletter-container">
+        <!-- 1. هيكل الرسالة: العنوان -->
+        <header>
+            <h1>نشرة أخبار مدينة الأحساء الرقمية</h1>
+            <p>أكبر واحة نخيل طبيعية في العالم</p>
+        </header>
 
-<!-- زر تفاعلي (النقطة 1 و 4) -->
-<button id="welcomeBtn" class="cool-btn">اضغط للترحيب!</button>
+        <section class="welcome-section">
+            <p>تُعدّ <b>الأحساء</b> واحدة من أعرق وأجمل مدن المملكة، تجمع بين التاريخ العريق والحضارة المتجددة.</p>
+        </section>
 
-<!-- ربط ملف الجافاسكريبت الخارجي (النقطة 3) -->
-<script src="script.js"></script> 
-        <div class="container">
+        <!-- صورة مرتبطة بالمدينة (النقطة 1) -->
+        <img src="5-2.jpg.webp" alt="سوق القيصرية التاريخي" class="main-image">
+
+        <!-- 2. تنظيم المحتوى داخل جدول (النقطة 2 و 6) -->
+        <table>
+            <thead>
+                <tr>
+                    <th width="30%">القسم</th>
+                    <th>التفاصيل والمعالم</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>خبر اليوم: المعالم التاريخية</b></td>
+                    <td>تضم الأحساء معالم بارزة مثل <i>جبل القارة</i> بتكوينه الفريد، وسوق القيصرية الذي يعكس الطابع التراثي الأصيل.</td>
+                </tr>
+                <tr>
+                    <td><b>مشروع تنموي: واحة اليونسكو</b></td>
+                    <td>تسجيل الواحة في قائمة التراث العالمي يؤكد قيمتها الإنسانية، مع استمرار النهضة في مجالات التعليم والثقافة والسياحة.</td>
+                </tr>
+                <tr>
+                    <td><b>فعالية وطنية: فخر النخيل</b></td>
+                    <td>مبادرات التشجير تهدف لزيادة أشجار النخيل لتعزيز الهوية الوطنية والجمال الطبيعي للواحة.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="text-align: center;">
+            <!-- 4. عنصر تفاعلي (زر الترحيب) -->
+            <button class="btn-interact" onclick="showWelcome()">اضغط لاستكشف فخرنا بالأحساء!</button>
+        </div>
+
+        <!-- تذييل الصفحة (النقطة 1) -->
+        <footer>
+            <p>إعداد الطالبة المبدعة: <b>[ضعي اسمك هنا]</b></p>
+            <p><i>"الأحساء.. قلبُ الوطنِ النابض بالخير، وعراقةُ النخيل التي تروي قصة فخرنا السعودي."</i></p>
+        </footer>
     </div>
-    <div class="images-section">
-    
-      <h1 id="mainTitle">الأحساء </h1>                
-      <h2 div class="supTitle">الأحساء: واحة النخيل والعطاء</h2 >      
-    <p>
-      <img src="Untitlيبed-3.jpg" alt="واحة الاحساء في منطقة جبل القارة"  height="200"  style="display:block" >
-    تُعدّ    <u> الأحساء </u> واحدة من أعرق وأجمل مدن المملكة العربية السعودية، فهي مدينة تجمع بين التاريخ العريق والطبيعة الخلابة والحضارة المتجددة.
-    تقع في المنطقة الشرقية، وتتميز بمكانتها التاريخية والثقافية التي جعلتها شاهدة على حضارات متعددة عبر العصور.
-    وتشتهر الأحساء بواحتها الواسعة التي تُعد من أكبر الواحات الطبيعية في العالم، حيث تنتشر أشجار النخيل في مشهد رائع يعكس جمال البيئة الزراعية وثراء الأرض.
-    </p>
-    <p>
-    وتحمل أهمية كبيرة لما تحتويه من معالم تاريخية وأثرية بارزة،
-     مثل   <i>جبل القارة</i>  الذي يتميز بتكوينه الصخري الفريد وكهوفه الطبيعية، 
-     إضافة إلى سوق القيصرية الذي يُعد من أقدم الأسواق الشعبية في المنطقة ويعكس الطابع التراثي الأصيل للمدينة. كما تضم واحة الأحساء موقعًا مسجلًا في قائمة التراث العالمي لدى اليونسكو، مما يؤكد قيمتها التاريخية والإنسانية على مستوى العالم.
-    </p>
-      <img src="5-2.jpg.webp" alt="سوق القيصرية" height="250" >
-    <p>
-      ولا تقتصر أهمية الأحساء على تاريخها فقط، بل تمتد لتشمل دورها الاقتصادي والثقافي، حيث تجمع بين الزراعة التقليدية والتنمية الحديثة،
-       مما يجعلها نموذجًا مميزًا للتوازن بين الأصالة والتطور. إن زيارة الأحساء تجربة فريدة تمنح الزائر إحساسًا بالهدوء والجمال، وتكشف له عن عمق التاريخ وروعة الطبيعة في آنٍ واحد.
-    </p>
 
-    <p>
-      وتشهد الأحساء في السنوات الأخيرة نهضة تنموية واضحة في مجالات التعليم والثقافة والسياحة، 
-      حيث أُقيمت فيها العديد من الفعاليات والمهرجانات التي تُبرز تراثها الأصيل وهويتها الوطنية.
-       كما يحرص أهلها على الحفاظ على العادات والتقاليد التي توارثوها عبر الأجيال، مما يعكس روح الانتماء والاعتزاز بتاريخ مدينتهم. وهكذا تبقى الأحساء مدينة نابضة بالحياة، تجمع بين الماضي العريق والحاضر المزدهر، وتستمر في رسم مستقبل مشرق يعكس مكانتها المميزة في المملكة.
-    </p> 
-    <script src="script.js"></script
-   </body>
+    <!-- 4. إضافة التفاعل بالجافاسكريبت -->
+    <script>
+        function showWelcome() {
+            alert("أهلاً بك في واحة الأحساء! شكراً لزيارتك نشرتنا الإخبارية الرقمية.");
+            document.body.style.backgroundColor = "#e8f5e9";
+        }
+    </script>
+</body>
 </html>
