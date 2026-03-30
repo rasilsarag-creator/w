@@ -133,3 +133,42 @@ u {
         margin-top: 20px;
     }
 }
+/* تنسيق زر الهامبرجر */
+.hamburger {
+    display: none; /* يختفي في الكمبيوتر */
+    font-size: 30px;
+    cursor: pointer;
+    color: #2c5e1a;
+}
+
+/* تنسيق الزر التفاعلي */
+.cool-btn {
+    padding: 10px 20px;
+    background-color: #379a2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cool-btn:hover { background-color: #2c5e1a; }
+
+/* إعدادات الجوال */
+@media (max-width: 768px) {
+    .hamburger { display: block; } /* يظهر في الجوال */
+    #nav-menu { display: none; } /* يختفي القائمة العادية */
+}
+nav ul {
+    list-style-type: none; /* يزيل النقاط السوداء */
+    padding: 0;
+    display: flex;         /* يجعل الروابط بجانب بعضها */
+    justify-content: center;
+    gap: 20px;             /* مسافة بين الروابط */
+}
+
+nav ul li a {
+    text-decoration: none; /* يزيل الخط تحت الرابط */
+    color: #2c5e1a;
+    font-weight: bold;
+}
