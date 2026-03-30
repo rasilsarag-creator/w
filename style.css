@@ -23,9 +23,9 @@ p{
 }
 img{
  border-style: groove;
- border-width: 10px;
+ border-width: 5px;
  border-color: #379a2a;
- border-radius: 10px;
+ border-radius: 5px;
  display: block;
  margin-left: auto;
  margin-right: auto;
@@ -85,15 +85,51 @@ h1 {
     min-width: auto;
     text-align: justify;
 }
-/* --- لجعل الصفحة متجاوبة (Responsive) --- */
+/* تنسيقات عامة لتجنب خروج العناصر عن الشاشة */
+* {
+    box-sizing: border-box; /* أهم سطر لمنع تمدد العناصر */
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    overflow-x: hidden; /* لمنع الحركة الجانبية المزعجة */
+}
+
+/* تعديل الصورة لتكون مرنة تماماً */
+img {
+    max-width: 95%; /* تضمن بقاء الصورة داخل الشاشة */
+    height: auto;
+    border: 5px solid #379a2a !important; /* تقليل سمك البرواز للجوال */
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* تنسيق النصوص */
+p {
+    text-align: center;
+    line-height: 1.8;
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+/* إزالة الخطوط الخضراء المزعجة تحت الكلام */
+u {
+    text-decoration: none;
+    color: #2c5e1a;
+    font-weight: bold;
+}
+
+/* --- تعديلات الجوال (Media Query) --- */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* الصور والنصوص تحت بعضها في الجوال */
+        flex-direction: column !important; /* النص تحت الصور */
+        padding: 5px !important;
     }
-}
-p {
-    padding: 0 20px; /* يعطي مساحة بسيطة يمين ويسار النص */
-}
-body {
-    background-color: #ffffff; /* لون أخضر فاتح جداً هادئ ومريح للعين */
+
+    h1 {
+        font-size: 22px !important; /* تصغير العنوان ليناسب الجوال */
+        margin-top: 20px;
+    }
 }
