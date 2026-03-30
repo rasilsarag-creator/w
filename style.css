@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
 #mainTitle{
-    color: #092B04 ;
+    color: #116317 ;
     background-color:  #50B342;
     text-decoration: underline;
     font-size: 50px;
@@ -8,7 +8,7 @@
     text-align: center;
 }
 .supTitle{
-   color: #1b5e20;
+   color: #68C8D9;
    font-size: 45px;
    text-align: center;
    font-family: ' Scheherazade New';
@@ -16,19 +16,84 @@
    font-style: italic;
 }
 p{
-  color: #4e342e;
-  font-size: 30px;
+  color: #599463;
+  font-size: 25px;
   text-align: rights;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 img{
-  float: left;
-  margin-left: 20px;
- margin-bottom: 10px;
-    width: 400px;
- height: 300px;
  border-style: groove;
  border-width: 10px;
  border-color: #379a2a;
  border-radius: 10px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 700px;
+ height: auto;
  }
+ /* تنسيق الحاسب (الشاشات الكبيرة) - المنظم */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* تنسيق التابلت (الشاشات المتوسطة) - المتناسق */
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+/* تنسيق الجوال (الشاشات الصغيرة) - الواضح */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+}
+/* إخفاء القائمة في الجوال وإظهار زر القائمة */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none; /* تُظهرها لاحقاً باستخدام JavaScript عند الضغط */
+    }
+    .hamburger-icon {
+        display: block;
+    }
+}
+/* تنسيقات عامة للصفحة */
+body {
+    direction: rtl; /* لجعل الكتابة من اليمين لليسار */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8; /* لزيادة المسافة بين السطور لسهولة القراءة */
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* تنسيق العنوان الرئيسي */
+h1 {
+    color: #2c5e1a; /* لون أخضر يرمز للواحة */
+    text-align: center;
+    border-bottom: 2px solid #2c5e1a;
+    padding-bottom: 10px;
+}
+
+
+/* تنسيق النصوص */
+.content {
+    flex: 2; /* النص يأخذ مساحة أكبر */
+    min-width: 300px;
+    text-align: justify;
+}
+/* --- لجعل الصفحة متجاوبة (Responsive) --- */
+@media (max-width: 200px) {
+    .container {
+        flex-direction: column; /* الصور والنصوص تحت بعضها في الجوال */
+    }
+}
+p {
+    padding: 0 20px; /* يعطي مساحة بسيطة يمين ويسار النص */
+}
+body {
+    background-color: #eff9f0; /* لون أخضر فاتح جداً هادئ ومريح للعين */
+}
