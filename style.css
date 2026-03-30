@@ -29,7 +29,7 @@ img{
  display: block;
  margin-left: auto;
  margin-right: auto;
- width: 700px;
+ width: 400px;
  height: auto;
  }
  /* تنسيق الحاسب (الشاشات الكبيرة) - المنظم */
@@ -82,11 +82,11 @@ h1 {
 /* تنسيق النصوص */
 .content {
     flex: 2; /* النص يأخذ مساحة أكبر */
-    min-width: 300px;
+    min-width: auto;
     text-align: justify;
 }
 /* --- لجعل الصفحة متجاوبة (Responsive) --- */
-@media (max-width: 200px) {
+@media (max-width: 768px) {
     .container {
         flex-direction: column; /* الصور والنصوص تحت بعضها في الجوال */
     }
@@ -95,5 +95,5 @@ p {
     padding: 0 20px; /* يعطي مساحة بسيطة يمين ويسار النص */
 }
 body {
-    background-color: #eff9f0; /* لون أخضر فاتح جداً هادئ ومريح للعين */
+    background-color: #ffffff; /* لون أخضر فاتح جداً هادئ ومريح للعين */
 }
