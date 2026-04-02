@@ -172,3 +172,48 @@ nav ul li a {
     color: #2c5e1a;
     font-weight: bold;
 }
+#myfooter p{
+    background-color: #50B342;
+    color: #116317!important;
+}
+/* تنسيق الجدول والحدود والمسافات */
+.news-table {
+    width: 100%;
+    border-collapse: collapse; /* دمج الحدود لتكون خطوطاً مفردة */
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: right;
+    direction: rtl; /* لضمان الاتجاه العربي */
+}
+
+.news-table th {
+    background-color: #68C8D9; /* لون رأس الجدول */
+    color: white;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.news-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    color: #379a2a;
+}
+
+/* تلوين الصفوف الزوجية لتسهيل القراءة */
+.news-table tbody tr:nth-child(even) {
+    background-color: #9ef8a3;
+    color: #379a2a;
+}
+
+/* تغيير اللون عند تمرير الفأرة (تفاعل بسيط) */
+.news-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* اختبار الاستجابة: جعل الجدول مرناً على الشاشات الصغيرة */
+@media (max-width: 600px) {
+    .news-table {
+        display: block;
+        overflow-x: auto; /* السماح بالتمرير الجانبي في الجوال */
+    }
+}
