@@ -1,4 +1,4 @@
-// زر القائمة (أحسن وأسلم)
+
 function toggleMenu() {
     const menu = document.getElementById("nav-menu");
 
